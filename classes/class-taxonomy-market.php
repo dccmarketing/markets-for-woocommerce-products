@@ -61,6 +61,7 @@ class Markets_For_Woocommerce_Products_Taxonomy_Market {
 		// register_meta( $meta_type, $meta_key, $sanitize_callback, $auth_callback );
 
 		register_meta( 'term', 'market-image', '' );
+		register_meta( 'term', 'market-thumb', '' );
 
 	} // add_term_meta()
 
@@ -104,6 +105,7 @@ class Markets_For_Woocommerce_Products_Taxonomy_Market {
 		$fields = array();
 
 		$fields[] 	= array( 'market-image', 'hidden', '' );
+		$fields[] 	= array( 'market-thumb', 'hidden', '' );
 		$fields[] 	= array( 'market-file', 'url', '' );
 
 		return $fields;

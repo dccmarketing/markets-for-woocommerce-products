@@ -62,7 +62,7 @@
 
 		});
 
-		fileFrame.open();
+		fileFrame.close();
 
 	}
 
